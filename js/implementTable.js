@@ -30,9 +30,14 @@ new DataTable('#example', {
         targets: 3, // Adjust this to your price column index
         render: function(data, type, row) {
           if (type === 'sort') {
-          // Extract the first number from ranges or use the single number
-            var match = data.match(/(\d+)/);
-            return match ? parseInt(match[1]) : 0;
+            var range = data.replace('$', '').split('-');
+            var avg;
+            if (range.length > 1) {
+              avg = (parseInt(range[0]) + parseInt(range[1])) / 2;
+            } else {
+              avg = parseInt(range[0]);
+            }
+            return avg;
           }
           return data;
         }
