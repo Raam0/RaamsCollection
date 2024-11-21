@@ -37,6 +37,7 @@ new DataTable('#example', {
             } else {
               avg = parseInt(range[0]);
             }
+            console.log(avg);
             return avg;
           }
           return data;
