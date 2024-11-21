@@ -24,5 +24,18 @@ new DataTable('#example', {
     paging: false,
     scrollCollapse: true,
     scrollY: '65vh',
-    order: [[4, 'desc']]
+    order: [[4, 'desc']],
+    columnDefs: [
+      {
+        targets: 3, // Adjust this to your price column index
+        render: function(data, type, row) {
+          if (type === 'sort') {
+          // Extract the first number from ranges or use the single number
+            var match = data.match(/(\d+)/);
+            return match ? parseInt(match[1]) : 0;
+          }
+          return data;
+        }
+      }
+    ]
 });
