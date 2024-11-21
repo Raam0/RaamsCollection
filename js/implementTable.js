@@ -41,7 +41,8 @@ new DataTable('#example', {
             return avg;
           }
           return data;
-        }
+        },
+        type: 'num'
       }
     ]
 });
