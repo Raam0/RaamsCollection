@@ -1,0 +1,17 @@
+{
+  "name": "RaamsCollection",
+  "version": "1.0.0",
+  "description": "A simple Node.js app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "newScript": "node /js/bundle.js"
+  },
+  "dependencies": {
+    "@azure/storage-blob": "^12.26.0",
+    "browserify": "^17.0.1",
+    "datatables.net-dt": "^2.1.8",
+    "express": "^4.16.1",
+    "grep": "^0.1.0"
+  }
+}
