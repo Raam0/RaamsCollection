@@ -43,9 +43,6 @@ function loadImages(files) {
         const gridSrc = document.createElement("img");
         gridSrc.loading = "lazy";
         gridSrc.src = item; 
-        gridSrc.style.width = "300px";
-        gridSrc.style.height = "190px";
-
         
         gridImage.appendChild(gridSrc);
         gridA.appendChild(gridHover);
