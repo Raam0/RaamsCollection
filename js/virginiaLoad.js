@@ -42,15 +42,9 @@ function loadImages(files) {
         
         const gridSrc = document.createElement("img");
         gridSrc.loading = "lazy";
-
-        // Assuming 'item' is a full URL ending in '.jpg'
-        const baseName = item.replace(/\.jpg$/, '');
-
-        gridSrc.src = `${baseName}-800w.jpg`; // Default image
-        gridSrc.srcset = `${baseName}-480w.jpg 480w, ${baseName}-800w.jpg 800w, ${baseName}-1600w.jpg 1600w`;
-        gridSrc.sizes = "(max-width: 480px) 480px, (max-width: 800px) 800px, 1600px"; // Customize sizes as needed
-
-      //  gridSrc.src = item; 
+        gridSrc.src = item; 
+        gridSrc.style.width = "300px";
+        gridSrc.style.height = "190px";
 
         
         gridImage.appendChild(gridSrc);
