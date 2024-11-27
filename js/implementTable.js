@@ -8,6 +8,8 @@ var dataSet = [
     ["Neighborhood Ramen", 'Japanese', 'Philidelphia, Pennsylvania', '20$', '5', 'Considered the best by a connoisseur in Philadelphia, not for me'],
     ["Hajimaru", 'Japanese', 'Philidelphia, Pennsylvania', '14$', '7', 'My go to Ramen spot in Fishtown, get the signature'],
     ["Yakiniku Korea House", 'Korean', 'Honolulu, Hawaii', '40$', '8', 'Best Korean BBQ I had in Hawaii. Suprisingly good chicken too'],
+    ["Benazuza", 'Contemporary', 'Cancun, Mexico', '60$', '6', 'Nice fine dining experience with some good dishes, but my octopus was cooked in to a brick'],
+    ["Funky Geisha", 'Asian Fusion', 'Cancun, Mexico', '30-35$', '9', "Incredible venue and the best drunken noodles I've ever had. Loud performances and overpriced drinks though"],
 ];
 
 
